@@ -1,0 +1,54 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+h1, h6 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+/* COMMON */
+
+.p-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-flex-aling-center {
+    align-items: center;
+}
+
+/* WRAPPER CLASS */
+
+.p-wrapper {
+    position: relative;
+}
+
+.p-wrapper::before {
+    content: '';
+    background: #f9b205;
+    height: 100vh;
+    width: 25vw;
+    position: absolute;
+    z-index: -1;
+}
